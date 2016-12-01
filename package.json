@@ -1,0 +1,23 @@
+{
+  "name": "csvtojson",
+  "version": "1.0.0",
+  "description": "Simple Python program that converts CSV to JSON for my MongoDB project.",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhang96/CSVToJSON.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhang96/CSVToJSON/issues"
+  },
+  "homepage": "https://github.com/zhang96/CSVToJSON#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "jsonfile": "^2.4.0"
+  }
+}
