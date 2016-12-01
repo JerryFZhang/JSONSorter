@@ -1,6 +1,7 @@
 var fs = require('fs');
 var json;
-var fileName = '/paraData.json';
+var fileName = __dirname + '/paraData.json';
+fileName = fileName.toString();
 //for (var i = 0; i < fileList.length; i++) {
 //    var fileName = fileList[i];
 //    while(fileName == undefined){
@@ -10,13 +11,13 @@ var fileName = '/paraData.json';
 //    console.log(fileName);
 //    fileName = '/' + fileName;
 //    console.log(fileName);
-fs.readFile(__dirname+'\/\paraData.json', function (err, data) {
-    if (err) {
-        return console.log(err);
-    }
+fs.readFile(fileName, (err, data) => {
+//    if (err) {
+//        return console.log(err);
+//    }
     obj = JSON.parse(data);
     var outputString;
-    var objectNameList = []
+    var objectNameList = ["HeartRate","UprightRow","TrunkFlexion","FirstName","InclineBenchPress","MaxVO2","StrengthPercentile","Gender","Weight","Year","ArmCurl","Stage","LastName","Client","TFPercentile","Age","TFOverride","DeadLift","MVO2Percentile"]
     for (var i = 0; i < obj.data.length; i++) {
         outputString += '{ "HeartRate": "'
         outputString += obj.data[i].HeartRate
