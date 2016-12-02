@@ -17,7 +17,7 @@ fs.readFile(fileName, (err, data) => {
 //    }
     obj = JSON.parse(data);
     var outputString;
-    var objectNameList = ["HeartRate","UprightRow","TrunkFlexion","FirstName","InclineBenchPress","MaxVO2","StrengthPercentile","Gender","Weight","Year","ArmCurl","Stage","LastName","Client","TFPercentile","Age","TFOverride","DeadLift","MVO2Percentile"]
+    // var objectNameList = ["HeartRate","UprightRow","TrunkFlexion","FirstName","InclineBenchPress","MaxVO2","StrengthPercentile","Gender","Weight","Year","ArmCurl","Stage","LastName","Client","TFPercentile","Age","TFOverride","DeadLift","MVO2Percentile"]
     // for (var i = 0; i < obj.data.length; i++) {
         outputString += '{ "HeartRate": "'
         outputString += obj.data[i].HeartRate
