@@ -2,6 +2,8 @@ var fs = require('fs');
 var json;
 var fileName = __dirname + '/paraData.json';
 fileName = fileName.toString();
+//TODO For all files... do..
+//TODO For some files.. do ..
 //for (var i = 0; i < fileList.length; i++) {
 //    var fileName = fileList[i];
 //    while(fileName == undefined){
@@ -12,13 +14,12 @@ fileName = fileName.toString();
 //    fileName = '/' + fileName;
 //    console.log(fileName);
 fs.readFile(fileName, (err, data) => {
-//    if (err) {
-//        return console.log(err);
-//    }
+   if (err) {
+       return console.log(err);
+   }
     obj = JSON.parse(data);
     var outputString;
-    // var objectNameList = ["HeartRate","UprightRow","TrunkFlexion","FirstName","InclineBenchPress","MaxVO2","StrengthPercentile","Gender","Weight","Year","ArmCurl","Stage","LastName","Client","TFPercentile","Age","TFOverride","DeadLift","MVO2Percentile"]
-    // for (var i = 0; i < obj.data.length; i++) {
+//TODO automate string append by giving an array and for loop to make more adapdable.
         outputString += '{ "HeartRate": "'
         outputString += obj.data[i].HeartRate
         outputString += '", "UprightRow": "'
